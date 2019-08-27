@@ -5,12 +5,12 @@ import {Link} from 'react-router-dom';
 function Nav() {
   return (
       <nav>
-          <h3>Pokedex</h3>
           <ul className="nav-links">
-              <Link to ="/Mypokemon">
+              <Link className="nav-links" to ="/Mypokemon">
                 <li>My Pokemon</li>
               </Link>
-              <Link to ="/pokemon">
+          <h3>Pokedex</h3>
+              <Link className="nav-links" to ="/pokemon">
                 <li> Pokemon</li>
               </Link>
           </ul>

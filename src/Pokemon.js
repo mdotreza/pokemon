@@ -21,7 +21,9 @@ function Pokemon() {
   return (
       <Container>
           <Row>
-                <h1>Pokemon List</h1>
+            <h1>Pokemon List</h1>
+          </Row>
+          <Row>
                 {items.map(pokemon=>(
                 <Col xs="6" className="listPoke">
                     <h4 className="namePok" key={pokemon.name}>

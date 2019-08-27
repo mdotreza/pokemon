@@ -1,7 +1,9 @@
 .App {
   text-align: center;
 }
-
+body{
+  background: #32a891;
+}
 nav{
   display: flex;
   justify-content: space-around;
@@ -11,11 +13,13 @@ nav{
   color: #2d2d2d;
 }
 .nav-links{
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: space-around;
   align-content: center;
   list-style: none;
+  text-decoration: none;
+  color: #2d2d2d;
 }
 .desc{
   border: 1px solid #2d2d2d;
@@ -27,4 +31,10 @@ nav{
 }
 .listPoke{
   border: 1px solid #2d2d2d;
+}
+.grey{
+  background: #8fbab2;
+}
+.white{
+  background: #fff;
 }
