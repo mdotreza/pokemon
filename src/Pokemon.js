@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react';
 import './App.css';
 import {Link} from 'react-router-dom';
 import {Container,Row,Col} from 'reactstrap';
+import PropTypes  from 'prop-types';
 
 function Pokemon() {
     
@@ -18,6 +19,7 @@ function Pokemon() {
         console.log(items);
         setItems(items.results);
     }
+
   return (
       <Container>
           <Row>
@@ -26,9 +28,12 @@ function Pokemon() {
           <Row>
                 {items.map(pokemon=>(
                 <Col xs="6" className="listPoke">
-                    <h4 className="namePok" key={pokemon.name}>
-                        <Link className="namePok" to={`/pokemon/${pokemon.name}`}>{pokemon.name}</Link>
+                <Link className="namePok" to={`/pokemon/${pokemon.name}`}>
+                    <img src={process.env.PUBLIC_URL + `/pokemon/${pokemon.name}.png`}/>
+                    <h4 className="namePok" key={pokemon.results}>
+                        {pokemon.name}
                     </h4>
+                </Link>
                 </Col>         
                 ))};
           </Row>

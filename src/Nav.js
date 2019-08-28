@@ -9,7 +9,7 @@ function Nav() {
               <Link className="nav-links" to ="/Mypokemon">
                 <li>My Pokemon</li>
               </Link>
-          <h3>Pokedex</h3>
+              <li><h3>Pokedex</h3></li>
               <Link className="nav-links" to ="/pokemon">
                 <li> Pokemon</li>
               </Link>

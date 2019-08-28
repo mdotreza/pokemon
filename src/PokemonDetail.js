@@ -1,8 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import './App.css';
-import {Link} from 'react-router-dom';
 import {Container,Row,Col, Button} from 'reactstrap';
-import { types } from '@babel/core';
 import PropTypes  from 'prop-types';
 
 function PokemonDetail({ match }) {
@@ -43,7 +41,6 @@ function PokemonDetail({ match }) {
                 <h2>Description</h2>
                 <h4>Weight: {items.weight}</h4>
                 <h4>Height: {items.height}</h4>
-                <h4>Height: {items.order}</h4>
             </Col>    
             <Col xs="12" className="white">
                 <h4>Ability:</h4>  
