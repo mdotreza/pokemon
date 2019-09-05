@@ -13,7 +13,7 @@ function App() {
         <div className="App">       
           <Nav />
           <Switch>           
-            <Route path="/" exact component={Home}/>
+            <Route path="/" exact component={Pokemon}/>
             <Route path="/Mypokemon" component={Mypokemon}/>
             <Route path="/Pokemon" exact component={Pokemon}/>
             <Route path="/Pokemon/:id" component={PokemonDetail}  />

@@ -20,21 +20,55 @@ nav{
   list-style: none;
   text-decoration: none;
   color: #2d2d2d;
+  bottom: -6px;
+  position: relative;
 }
-.desc{
-  border: 1px solid #2d2d2d;
-  border-radius: 5%;
+html, body{
+  font-family : sans-serif;
+  background: #e2e1e0;
+    text-align : center;
+    color: #2d2d2d;
 }
-.namePok{
-  color: #2d2d2d;
-  text-transform: capitalize;
+.pokeapp{
+    padding : 16px;
 }
-.listPoke{
-  border: 1px solid #2d2d2d;
+.pokemon--species--list{
+    display : -webkit-box;
+    display : -ms-flexbox;
+    display : flex;
+    -ms-flex-wrap : wrap;
+        flex-wrap : wrap;
+    padding : 16px 0;
 }
-.grey{
-  background: #8fbab2;
+.pokemon--species{
+    -ms-flex-preferred-size : 25%;
+        flex-basis : 25%;
+    padding : 8px;
+    box-sizing: border-box;
+
 }
-.white{
-  background: #fff;
+.pokemon--species--container{
+    padding : 8px;
+    background : white;
+    cursor : pointer;
+ box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.pokemon--species--pokename{
+    text-transform: capitalize;
+}
+.pokemon--species--pokename span{
+    font-weight: 600;
+}
+.pokemon--species--name{
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.pokemon--species--name p{
+    display: inline-block;
+    padding-right: 10px;
+}
+.backname{
+    float: left;
+    text-decoration: none;
+    color: #2d2d2d;
 }
