@@ -27,7 +27,7 @@ function Pokemon() {
     const[items,setItems] =useState([]);
 
     const fetchItems = async()=>{
-        const data = await fetch('http://pokeapi.co/api/v2/pokemon?limit=151');
+        const data = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
         const items = await data.json();
         console.log(items);
         setItems(items.results);
